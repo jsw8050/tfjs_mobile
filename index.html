@@ -62,7 +62,7 @@
         // obileNet 모델 predict() 메소드
         async function predict() {
             // 모델 import
-            const model = await tf.loadLayersModel('./model.json');
+            const model = await tf.loadLayersModel('./model/model.json');
 
             image = tf.browser.fromPixels(canvas); // canvas에 이미지 가져오기
             console.log(image); // 콘솔에 이미지 data 찍기.
